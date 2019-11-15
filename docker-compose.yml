@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  baidu-pcs-web:
+    build:
+      context: .
+      args:
+        PCS_VERSION: 3.6.8
+    environment:
+      GID: 33
+      UID: 33
+    ports:
+      - "6803:5299"
+    volumes:
+      - /tmp/filerun/user-files:/home/www-data/Downloads
