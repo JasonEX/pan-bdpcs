@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:latest
 
 ARG PCS_VERSION='3.6.8'
 ENV GID 65534
